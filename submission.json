@@ -558,11 +558,13 @@
       "statementEffect": {
         "profit": 0,
         "cash": 90000,
-        "assets": 0,
+        "assets": 90000,
         "liabilities": 90000,
         "equity": 0
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "original_transaction",
+      "effectNote": "Cash received is an asset. The same €90,000 is a contract liability until performance."
     },
     {
       "id": "D042",
@@ -581,11 +583,13 @@
       "statementEffect": {
         "profit": 0,
         "cash": 50000,
-        "assets": 0,
+        "assets": 50000,
         "liabilities": 50000,
         "equity": 0
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "original_transaction",
+      "effectNote": "The bank receipt increases cash, which is part of total assets, and creates the matching loan liability."
     },
     {
       "id": "D043",
@@ -605,11 +609,13 @@
       "statementEffect": {
         "profit": 0,
         "cash": -60000,
-        "assets": 60000,
+        "assets": 0,
         "liabilities": 0,
         "equity": 0
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "original_transaction",
+      "effectNote": "Cash falls €60,000 and PPE rises €60,000, so total assets and equity do not change at purchase."
     },
     {
       "id": "D044",
@@ -629,11 +635,13 @@
       "statementEffect": {
         "profit": 0,
         "cash": -20000,
-        "assets": 20000,
+        "assets": 0,
         "liabilities": 0,
         "equity": 0
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "original_transaction",
+      "effectNote": "Cash falls €20,000 and PPE rises €20,000, so total assets and equity do not change at purchase."
     },
     {
       "id": "D045",
@@ -653,11 +661,13 @@
       "statementEffect": {
         "profit": -10000,
         "cash": -10000,
-        "assets": 0,
+        "assets": -10000,
         "liabilities": 0,
         "equity": -10000
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "original_transaction",
+      "effectNote": "The paid repair reduces cash and therefore total assets; the same expense reduces profit and equity."
     },
     {
       "id": "D046",
@@ -676,11 +686,13 @@
       "statementEffect": {
         "profit": 0,
         "cash": -70000,
-        "assets": 0,
+        "assets": -70000,
         "liabilities": 0,
         "equity": -70000
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "original_transaction",
+      "effectNote": "The owner withdrawal reduces cash, which is an asset, and reduces equity. It does not affect profit."
     },
     {
       "id": "D047",
@@ -699,11 +711,13 @@
       "statementEffect": {
         "profit": 0,
         "cash": -40000,
-        "assets": 0,
+        "assets": -40000,
         "liabilities": 0,
         "equity": -40000
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "original_transaction",
+      "effectNote": "The owner withdrawal reduces cash, which is an asset, and reduces equity. It does not affect profit."
     },
     {
       "id": "D048",
@@ -725,7 +739,9 @@
         "liabilities": 0,
         "equity": -405000
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "original_transaction",
+      "effectNote": "Consumption reduces inventory and total assets; the matching cost reduces profit and equity."
     },
     {
       "id": "D049",
@@ -741,13 +757,15 @@
       "independentChallenge": "The independent analysis agreed with the payroll file description.",
       "studentReasoning": "The work is directly attributable to delivering the service sold to customers.",
       "statementEffect": {
-        "profit": -80000,
+        "profit": 0,
         "cash": 0,
         "assets": 0,
         "liabilities": 0,
-        "equity": -80000
+        "equity": 0
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "correction",
+      "effectNote": "This is a presentation reclassification within payroll expense: it moves €80,000 to direct event cost without changing total profit, cash, assets, liabilities or equity."
     },
     {
       "id": "D050",
@@ -835,7 +853,9 @@
         "liabilities": 0,
         "equity": -24000
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "correction",
+      "effectNote": "Period-end adjusting entry: depreciation reduces net PPE, profit and equity but does not use cash."
     },
     {
       "id": "D057",
@@ -858,7 +878,9 @@
         "liabilities": 0,
         "equity": -18000
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "correction",
+      "effectNote": "Period-end correcting entry: the receivable, total assets, profit and equity fall; no cash is paid."
     },
     {
       "id": "D058",
@@ -881,7 +903,9 @@
         "liabilities": 0,
         "equity": -22000
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "correction",
+      "effectNote": "Period-end correcting entry: inventory, total assets, profit and equity fall; no cash moves."
     },
     {
       "id": "D059",
@@ -904,7 +928,9 @@
         "liabilities": 25000,
         "equity": -25000
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "correction",
+      "effectNote": "Period-end correcting entry: profit and equity fall while the provision liability rises; cash is not yet paid."
     },
     {
       "id": "D060",
@@ -971,11 +997,13 @@
       "statementEffect": {
         "profit": 180000,
         "cash": 180000,
-        "assets": 0,
+        "assets": 180000,
         "liabilities": 0,
         "equity": 180000
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "original_transaction",
+      "effectNote": "The collected cash is part of total assets, so total assets and equity rise together by €180,000."
     },
     {
       "id": "D065",
@@ -995,11 +1023,13 @@
       "statementEffect": {
         "profit": 200000,
         "cash": 142000,
-        "assets": 58000,
+        "assets": 200000,
         "liabilities": 0,
         "equity": 200000
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "original_transaction",
+      "effectNote": "Cash €142,000 plus receivable €58,000 equals the €200,000 increase in total assets and equity."
     },
     {
       "id": "D066",
@@ -1019,11 +1049,13 @@
       "statementEffect": {
         "profit": 100000,
         "cash": 70000,
-        "assets": 30000,
+        "assets": 100000,
         "liabilities": 0,
         "equity": 100000
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "original_transaction",
+      "effectNote": "Cash €70,000 plus receivable €30,000 equals the €100,000 increase in total assets and equity."
     },
     {
       "id": "D067",
@@ -1039,15 +1071,17 @@
       "confidence": "high",
       "aiProposal": "Recognise the full Liberty invoice on delivery and retain €25,000 receivable.",
       "independentChallenge": "The independent analysis agreed with delivery evidence and customer acceptance.",
-      "studentReasoning": "The delivery and acceptance predate 31 August.",
+      "studentReasoning": "Delivery and acceptance predate 31 August.",
       "statementEffect": {
         "profit": 120000,
         "cash": 95000,
-        "assets": 25000,
+        "assets": 120000,
         "liabilities": 0,
         "equity": 120000
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "original_transaction",
+      "effectNote": "Cash €95,000 plus receivable €25,000 equals the €120,000 increase in total assets and equity."
     },
     {
       "id": "D068",
@@ -1065,13 +1099,15 @@
       "independentChallenge": "The independent analysis independently reached the same conclusion from the September delivery dates.",
       "studentReasoning": "Neither event had been delivered by 31 August.",
       "statementEffect": {
-        "profit": 0,
-        "cash": 90000,
+        "profit": -90000,
+        "cash": 0,
         "assets": 0,
         "liabilities": 90000,
-        "equity": 0
+        "equity": -90000
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "correction",
+      "effectNote": "This correction reverses an incorrect revenue classification: cash and total assets do not change; liability rises €90,000 and equity/profit fall €90,000."
     },
     {
       "id": "D069",
@@ -1119,7 +1155,9 @@
         "liabilities": 0,
         "equity": -18000
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "correction",
+      "effectNote": "This is the final estimate of the period-end bad-debt correction; it reduces receivables, total assets, profit and equity."
     },
     {
       "id": "D072",
@@ -1142,7 +1180,9 @@
         "liabilities": 0,
         "equity": -22000
       },
-      "changedFromAI": true
+      "changedFromAI": true,
+      "effectBasis": "correction",
+      "effectNote": "This is the final period-end inventory correction: inventory, total assets, profit and equity fall €22,000; no disposal liability is recorded."
     },
     {
       "id": "D073",
@@ -1165,7 +1205,9 @@
         "liabilities": 25000,
         "equity": -25000
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "correction",
+      "effectNote": "This is the final period-end provision correction: liability rises €25,000 while profit and equity fall; cash is not yet paid."
     },
     {
       "id": "D074",
@@ -1187,7 +1229,9 @@
         "liabilities": 0,
         "equity": -24000
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "correction",
+      "effectNote": "This is the final period-end depreciation correction: net PPE, total assets, profit and equity fall; cash does not move."
     },
     {
       "id": "D075",
@@ -1206,11 +1250,16 @@
       "statementEffect": {
         "profit": 0,
         "cash": 0,
-        "assets": 112000,
+        "assets": 0,
         "liabilities": 0,
-        "equity": 112000
+        "equity": 0
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "closing_balance",
+      "effectNote": "Closing inventory is the result of the roll-forward, not an additional transaction or correction. It is therefore shown as a closing balance only and adds no further statement movement.",
+      "closingBalance": {
+        "inventory": 112000
+      }
     },
     {
       "id": "D076",
@@ -1416,7 +1465,9 @@
         "liabilities": 0,
         "equity": 0
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "correction",
+      "effectNote": "Board approval itself is not a new transaction; it confirms that valuation must use the corrected statement effects already recorded."
     },
     {
       "id": "D092",
@@ -1537,7 +1588,9 @@
         "liabilities": 0,
         "equity": 0
       },
-      "changedFromAI": false
+      "changedFromAI": false,
+      "effectBasis": "correction",
+      "effectNote": "The board decision creates no additional accounting movement; it prevents reliance on the misstated management measure."
     }
   ],
   "schedules": {
@@ -1882,3 +1935,4 @@
     ]
   }
 }
+
